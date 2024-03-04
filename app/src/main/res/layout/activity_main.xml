@@ -186,92 +186,103 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/formacaoTv" />
 
-
-
     <LinearLayout
-        android:id="@+id/fundmedioformaturaLl"
+        android:id="@+id/linear_layout_geral"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:padding="5dp"
         android:layout_margin="5dp"
-        android:orientation="vertical"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/formacaoSp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/formacaoSp">
+        app:layout_constraintEnd_toEndOf="parent">
 
-        <EditText
-            android:layout_weight="1"
-            android:id="@+id/anoformaturaEt"
+        <LinearLayout
+            android:id="@+id/fundmedioformaturaLl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ano de formatura"
-            android:inputType="date" />
-    </LinearLayout>
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/formacaoSp">
 
-    <LinearLayout
-        android:id="@+id/gradespecLl"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:layout_margin="5dp"
-        android:orientation="vertical"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/formacaoSp">
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/anoformaturaEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ano de formatura"
+                android:inputType="date" />
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/anoconclusaoEt"
+        <LinearLayout
+            android:id="@+id/gradespecLl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ano de Conclusão"
-            android:inputType="date" />
-        <EditText
-            android:id="@+id/instituicaoEt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Insituição"
-            android:inputType="text" />
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/formacaoSp">
 
-    </LinearLayout>
+            <EditText
+                android:id="@+id/anoconclusaoEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ano de Conclusão"
+                android:inputType="date" />
+            <EditText
+                android:id="@+id/instituicaoEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Insituição"
+                android:inputType="text" />
 
-    <LinearLayout
-        android:id="@+id/mestradodoutoradoLl"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:layout_margin="5dp"
-        android:orientation="vertical"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/formacaoSp">
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/anoconclusao2Et"
+        <LinearLayout
+            android:id="@+id/mestradodoutoradoLl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ano de Conclusão"
-            android:inputType="date" />
-        <EditText
-            android:id="@+id/instituicao2Et"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Insituição"
-            android:inputType="text" />
-        <EditText
-            android:id="@+id/tituloEt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Titulo de monografia"
-            android:inputType="text" />
-        <EditText
-            android:id="@+id/orientadorEt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Orientador"
-            android:inputType="text" />
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/formacaoSp">
+
+            <EditText
+                android:id="@+id/anoconclusao2Et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ano de Conclusão"
+                android:inputType="date" />
+            <EditText
+                android:id="@+id/instituicao2Et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Insituição"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/tituloEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Titulo de monografia"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/orientadorEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Orientador"
+                android:inputType="text" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -289,7 +300,7 @@
         android:layout_margin="5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/formacaoSp"/>
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_geral"/>
 
     <Button
         android:id="@+id/salvarBt"
