@@ -84,8 +84,8 @@ class MainActivity : AppCompatActivity() {
                 if (amb.gradespecLl.visibility == View.VISIBLE) {
                     val anoConclusao = amb.anoconclusaoEt.text
                     val instituicao = amb.instituicaoEt.text
-                    infoCadastro.append("Ano de Conclusão (Graduação): $anoConclusao\n")
-                    infoCadastro.append("Instituição (Graduação): $instituicao\n")
+                    infoCadastro.append("Ano de Conclusão (Graduação ou especializacao): $anoConclusao\n")
+                    infoCadastro.append("Instituição (Graduação ou especializacao): $instituicao\n")
                 }
 
                 if (amb.mestradodoutoradoLl.visibility == View.VISIBLE) {
@@ -95,8 +95,8 @@ class MainActivity : AppCompatActivity() {
                     val orientador = amb.orientadorEt.text
                     infoCadastro.append("Ano de Conclusão (Mestrado/Doutorado): $anoConclusao2\n")
                     infoCadastro.append("Instituição (Mestrado/Doutorado): $instituicao2\n")
-                    infoCadastro.append("Título de monografia: $tituloMonografia\n")
-                    infoCadastro.append("Orientador: $orientador\n")
+                    infoCadastro.append("Título de monografia (Mestrado/Doutorado): $tituloMonografia\n")
+                    infoCadastro.append("Orientador(Mestrado/Doutorado): $orientador\n")
                 }
                 infoCadastro.append("Vagas de interesse: $vagas\n")
                 println(infoCadastro)
